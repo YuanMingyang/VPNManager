@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAC93FFA2AAB01B100F6805C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC93FF92AAB01B100F6805C /* AppDelegate.swift */; };
+		BAC93FFC2AAB01B100F6805C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC93FFB2AAB01B100F6805C /* SceneDelegate.swift */; };
+		BAC93FFE2AAB01B100F6805C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC93FFD2AAB01B100F6805C /* ViewController.swift */; };
+		BAC940012AAB01B100F6805C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC93FFF2AAB01B100F6805C /* Main.storyboard */; };
+		BAC940032AAB01B100F6805C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC940022AAB01B100F6805C /* Assets.xcassets */; };
+		BAC940062AAB01B100F6805C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC940042AAB01B100F6805C /* LaunchScreen.storyboard */; };
+		BAC940222AAB0EDB00F6805C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC940212AAB0EDB00F6805C /* NetworkExtension.framework */; };
+		BAC940252AAB0EDB00F6805C /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC940242AAB0EDB00F6805C /* PacketTunnelProvider.swift */; };
+		BAC9402A2AAB0EDB00F6805C /* Tunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BAC9401F2AAB0EDB00F6805C /* Tunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAC940312AAB0F1400F6805C /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC940302AAB0F1400F6805C /* VPNManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAC940282AAB0EDB00F6805C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAC93FEE2AAB01B100F6805C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC9401E2AAB0EDB00F6805C;
+			remoteInfo = Tunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAC9402B2AAB0EDB00F6805C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BAC9402A2AAB0EDB00F6805C /* Tunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BAC93FF62AAB01B100F6805C /* VPNManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC93FF92AAB01B100F6805C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAC93FFB2AAB01B100F6805C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BAC93FFD2AAB01B100F6805C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAC940002AAB01B100F6805C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAC940022AAB01B100F6805C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAC940052AAB01B100F6805C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAC940072AAB01B100F6805C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC9401F2AAB0EDB00F6805C /* Tunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Tunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC940212AAB0EDB00F6805C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		BAC940242AAB0EDB00F6805C /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		BAC940262AAB0EDB00F6805C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC940272AAB0EDB00F6805C /* Tunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tunnel.entitlements; sourceTree = "<group>"; };
+		BAC940302AAB0F1400F6805C /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		BAC940322AAB100E00F6805C /* VPNManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPNManager.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAC93FF32AAB01B100F6805C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC9401C2AAB0EDB00F6805C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC940222AAB0EDB00F6805C /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAC93FED2AAB01B100F6805C = {
+			isa = PBXGroup;
+			children = (
+				BAC93FF82AAB01B100F6805C /* VPNManager */,
+				BAC940232AAB0EDB00F6805C /* Tunnel */,
+				BAC940202AAB0EDB00F6805C /* Frameworks */,
+				BAC93FF72AAB01B100F6805C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAC93FF72AAB01B100F6805C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAC93FF62AAB01B100F6805C /* VPNManager.app */,
+				BAC9401F2AAB0EDB00F6805C /* Tunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAC93FF82AAB01B100F6805C /* VPNManager */ = {
+			isa = PBXGroup;
+			children = (
+				BAC940322AAB100E00F6805C /* VPNManager.entitlements */,
+				BAC9402F2AAB0EFF00F6805C /* VPNManager */,
+				BAC93FF92AAB01B100F6805C /* AppDelegate.swift */,
+				BAC93FFB2AAB01B100F6805C /* SceneDelegate.swift */,
+				BAC93FFD2AAB01B100F6805C /* ViewController.swift */,
+				BAC93FFF2AAB01B100F6805C /* Main.storyboard */,
+				BAC940022AAB01B100F6805C /* Assets.xcassets */,
+				BAC940042AAB01B100F6805C /* LaunchScreen.storyboard */,
+				BAC940072AAB01B100F6805C /* Info.plist */,
+			);
+			path = VPNManager;
+			sourceTree = "<group>";
+		};
+		BAC940202AAB0EDB00F6805C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC940212AAB0EDB00F6805C /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAC940232AAB0EDB00F6805C /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				BAC940242AAB0EDB00F6805C /* PacketTunnelProvider.swift */,
+				BAC940262AAB0EDB00F6805C /* Info.plist */,
+				BAC940272AAB0EDB00F6805C /* Tunnel.entitlements */,
+			);
+			path = Tunnel;
+			sourceTree = "<group>";
+		};
+		BAC9402F2AAB0EFF00F6805C /* VPNManager */ = {
+			isa = PBXGroup;
+			children = (
+				BAC940302AAB0F1400F6805C /* VPNManager.swift */,
+			);
+			path = VPNManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAC93FF52AAB01B100F6805C /* VPNManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC9400A2AAB01B100F6805C /* Build configuration list for PBXNativeTarget "VPNManager" */;
+			buildPhases = (
+				BAC93FF22AAB01B100F6805C /* Sources */,
+				BAC93FF32AAB01B100F6805C /* Frameworks */,
+				BAC93FF42AAB01B100F6805C /* Resources */,
+				BAC9402B2AAB0EDB00F6805C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAC940292AAB0EDB00F6805C /* PBXTargetDependency */,
+			);
+			name = VPNManager;
+			productName = VPNManager;
+			productReference = BAC93FF62AAB01B100F6805C /* VPNManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAC9401E2AAB0EDB00F6805C /* Tunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC9402E2AAB0EDB00F6805C /* Build configuration list for PBXNativeTarget "Tunnel" */;
+			buildPhases = (
+				BAC9401B2AAB0EDB00F6805C /* Sources */,
+				BAC9401C2AAB0EDB00F6805C /* Frameworks */,
+				BAC9401D2AAB0EDB00F6805C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tunnel;
+			productName = Tunnel;
+			productReference = BAC9401F2AAB0EDB00F6805C /* Tunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAC93FEE2AAB01B100F6805C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BAC93FF52AAB01B100F6805C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					BAC9401E2AAB0EDB00F6805C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BAC93FF12AAB01B100F6805C /* Build configuration list for PBXProject "VPNManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAC93FED2AAB01B100F6805C;
+			productRefGroup = BAC93FF72AAB01B100F6805C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAC93FF52AAB01B100F6805C /* VPNManager */,
+				BAC9401E2AAB0EDB00F6805C /* Tunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAC93FF42AAB01B100F6805C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC940062AAB01B100F6805C /* LaunchScreen.storyboard in Resources */,
+				BAC940032AAB01B100F6805C /* Assets.xcassets in Resources */,
+				BAC940012AAB01B100F6805C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC9401D2AAB0EDB00F6805C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAC93FF22AAB01B100F6805C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC93FFE2AAB01B100F6805C /* ViewController.swift in Sources */,
+				BAC93FFA2AAB01B100F6805C /* AppDelegate.swift in Sources */,
+				BAC940312AAB0F1400F6805C /* VPNManager.swift in Sources */,
+				BAC93FFC2AAB01B100F6805C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC9401B2AAB0EDB00F6805C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC940252AAB0EDB00F6805C /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAC940292AAB0EDB00F6805C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC9401E2AAB0EDB00F6805C /* Tunnel */;
+			targetProxy = BAC940282AAB0EDB00F6805C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAC93FFF2AAB01B100F6805C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAC940002AAB01B100F6805C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAC940042AAB01B100F6805C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAC940052AAB01B100F6805C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAC940082AAB01B100F6805C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAC940092AAB01B100F6805C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAC9400B2AAB01B100F6805C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VPNManager/VPNManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S88AT5C9XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VPNManager/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.booster.VPNManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAC9400C2AAB01B100F6805C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VPNManager/VPNManager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S88AT5C9XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VPNManager/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.booster.VPNManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAC9402C2AAB0EDB00F6805C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Tunnel/Tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S88AT5C9XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.booster.VPNManager.Tunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAC9402D2AAB0EDB00F6805C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Tunnel/Tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S88AT5C9XA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.booster.VPNManager.Tunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAC93FF12AAB01B100F6805C /* Build configuration list for PBXProject "VPNManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC940082AAB01B100F6805C /* Debug */,
+				BAC940092AAB01B100F6805C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC9400A2AAB01B100F6805C /* Build configuration list for PBXNativeTarget "VPNManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC9400B2AAB01B100F6805C /* Debug */,
+				BAC9400C2AAB01B100F6805C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC9402E2AAB0EDB00F6805C /* Build configuration list for PBXNativeTarget "Tunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC9402C2AAB0EDB00F6805C /* Debug */,
+				BAC9402D2AAB0EDB00F6805C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAC93FEE2AAB01B100F6805C /* Project object */;
+}
